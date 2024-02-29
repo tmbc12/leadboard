@@ -26,7 +26,12 @@ html {
   --third: #C6906B;
 }
 #logo{
-  text-align: center;
+  display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
 }
 html.theme--dark {
   --theme: var(--white);
