@@ -94,7 +94,7 @@ const renderList = year => {
 		`;
     const title = createNode('div');
     title.classList = 'c-headline';
-    title.innerHTML = `<h4 class="c-headline__title"><small class="u-text--danger">FORMULA 1</small><br />Driver Standings <small class="u-text--secondary">(${year == 'current' ? new Date().getFullYear() : year})</small></h4><span class="c-chip ${year == 'current' ? 'c-chip--success' : 'c-chip--secondary'}">Season ${year == 'current' ? 'in Progress' : 'Completed'}</span>`;
+    title.innerHTML = `<h4 class="c-headline__title"><small class="u-text--danger">Mighty Grip</small><br />Leaderboard<small class="u-text--secondary">(${year == 'current' ? new Date().getFullYear() : year})</small></h4><span class="c-chip ${year == 'current' ? 'c-chip--success' : 'c-chip--secondary'}">Season ${year == 'current' ? 'in Progress' : 'Completed'}</span>`;
     append(wrapper, title);
     append(wrapper, table);
     data.MRData.StandingsTable.StandingsLists[0].DriverStandings.forEach(item => {

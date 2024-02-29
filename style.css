@@ -25,6 +25,9 @@ html {
   --second: var(--base-60);
   --third: #C6906B;
 }
+#logo{
+  text-align: center;
+}
 html.theme--dark {
   --theme: var(--white);
   --theme-invert: var(--black);
@@ -100,7 +103,7 @@ p {
 
 .l-wrapper {
   width: 100%;
-  max-width: 500px;
+  max-width: 900px;
   margin: auto;
   padding: 3.2rem 0.8rem;
 }
