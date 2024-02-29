@@ -84,8 +84,8 @@ const renderList = year => {
 			<thead class="c-table__head">
 				<tr class="c-table__head-row">
 					<th class="c-table__head-cell u-text--center">Place</th>
-					<th class="c-table__head-cell">Driver</th>
-					<th class="c-table__head-cell">Wins</th>
+					<th class="c-table__head-cell">Competitor</th>
+					
 					<th class="c-table__head-cell u-text--right">Points</th>
 				</tr>
 			</thead>
@@ -104,7 +104,7 @@ const renderList = year => {
       tr.innerHTML = `
 						<td class="c-table__cell c-table__cell--place u-text--center"><span class="c-place">${item.position}</span></td>
 					<td class="c-table__cell c-table__cell--name">${item.Driver.givenName} ${item.Driver.familyName}<br><small style="opacity: .4;">${item.Constructors[0].name}</small></td>
-					<td class="c-table__cell c-table__cell--count"><small>${item.wins}</small></td>
+					
 					<td class="c-table__cell c-table__cell--points u-text--right"><strong>${item.points}</strong></td>
 				`;
 
